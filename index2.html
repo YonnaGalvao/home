@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Yonná Galvão</title>
+
+<!-- GOOGLE FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Montserrat', sans-serif;
+  min-height:100vh;
+
+  background:
+  linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)),
+  url("bg.jpg");
+
+  background-size:cover;
+  background-position:center;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  align-items:center;
+
+  color:white;
+}
+
+.container{
+  width:100%;
+  max-width:420px;
+  padding:20px;
+  text-align:center;
+}
+
+/* TÍTULO */
+
+.titulo{
+  margin-bottom:25px;
+}
+
+.logo-nome{
+  width:320px;
+  max-width:90%;
+
+}
+
+.titulo h1{
+
+  font-family:'League Spartan', sans-serif;
+
+  font-size:44px;
+
+  font-weight:800;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+  color:transparent;
+
+  -webkit-text-stroke:1.5px white;
+
+  text-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+.titulo p{
+  font-size:16px;
+  font-weight:800;
+
+  color:#b8f5a8;
+
+  letter-spacing:2px;
+
+  margin-top:5px;
+
+  text-transform:uppercase;
+}
+
+/* REDES */
+
+.redes{
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  margin:420px 0 20px;
+}
+
+.redes img{
+  width:55px;
+  height:55px;
+  transition:.3s;
+}
+
+.redes img:hover{
+  transform:scale(1.1);
+}
+
+/* TEXTO */
+
+.frase{
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:2px;
+  margin-bottom:18px;
+}
+
+/* BOTÕES */
+
+.botao{
+  width:100%;
+  height:40px;
+
+  border-radius:10px;
+  margin-bottom:15px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:15px;
+
+  text-decoration:none;
+
+  font-weight:700;
+  letter-spacing:2px;
+  font-size:13px;
+
+  transition:.3s;
+}
+
+/* BOTÃO VERDE */
+
+.verde{
+  background:#34d06f;
+  color:white;
+}
+
+/* BOTÃO TRANSPARENTE */
+
+.transparente{
+  border:3px solid rgba(255,255,255,0.9);
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(0px);
+  color:white;
+}
+
+.botao:hover{
+  transform:scale(1.03);
+}
+
+.botao img{
+  width:28px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:480px){
+
+  .titulo h1{
+    font-size:34px;
+  }
+
+  .titulo p{
+    font-size:13px;
+  }
+
+  .redes{
+    margin-top:360px;
+  }
+
+  .rodape{
+  width:100%;
+  text-align:center;
+
+  padding:15px 10px;
+
+  font-size:12px;
+  font-weight:500;
+
+    color:white;
+ }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- TÍTULO -->
+  <div class="titulo">
+
+    <img src="nome.png" class="logo-nome">
+
+    <p>REVEALING YOUR TRUE OBSESSION</p>
+  </div>
+
+  <!-- REDES -->
+  <div class="redes">
+
+    <a href=""https://www.instagram.com/yonna.galvao?igsh=MWU5bXRycTRraGY4ZA%3D%3D&utm_source=qr">
+      <img src="instagram.png">
+    </a>
+
+    <a href="https://www.tiktok.com/@yonna.galvao?_r=1&_t=ZS-95fia1yuOFp">
+      <img src="tiktok.png">
+    </a>
+
+    <a href="https://x.com/euyonnagalvao?s=21">
+      <img src="x.png">
+    </a>
+
+  </div>
+
+  <!-- TEXTO -->
+  <div class="frase">
+    GET CLOSER TO ME:
+  </div>
+
+  <!-- BOTÕES -->
+
+  <a href="https://privacy.com.br/profile/Yonnagalvao" class="botao verde">
+    <img src="privacy.png">
+    PRIVACY
+  </a>
+
+  <a href="https://www.myclosecommunity.com.br/quem-te-indicou/?ref=43Q49V12G6&context=Ionagalvao"   class="botao transparente">
+    <img src="myclose.png">
+    MY CLOSE
+  </a>
+
+  <a href="https://onlyfans.com/yonnagalvao/c50" class="botao transparente">
+    <img src="onlyfree.png">
+    ONLY FREE
+  </a>
+
+  <a href="https://onlyfans.com/bkangel/c3" class="botao verde">
+    <img src="onlyvip.png">
+    ONLY VIP
+  </a>
+
+</div>
+
+<footer class="rodape">
+  Yonna Galvão © 2026 - Todos os direitos reservados
+</footer>
+
+</body>
+</html>
