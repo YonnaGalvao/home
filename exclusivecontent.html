@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Yonná Galvão - Exclusive Content</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+
+    background:
+    linear-gradient(
+        180deg,
+        #f37b50 0%,
+        #ef673f 100%
+    );
+
+    min-height:100vh;
+}
+
+.container{
+    width:100%;
+    max-width:760px;
+    margin:auto;
+}
+
+/* HERO */
+
+.hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:35px 35px 0 0;
+}
+
+.hero img{
+
+    width:100%;
+    display:block;
+}
+
+.hero::after{
+
+    content:'';
+
+    position:absolute;
+
+    left:0;
+    right:0;
+    bottom:0;
+
+    height:220px;
+
+    background:
+    linear-gradient(
+        transparent,
+        rgba(243,123,80,.95)
+    );
+}
+
+.hero-text{
+
+    position:absolute;
+
+    bottom:50px;
+
+    width:100%;
+
+    text-align:center;
+
+    z-index:2;
+}
+
+.hero-text h1{
+
+    font-size:58px;
+
+    color:#000;
+
+    font-weight:800;
+
+    letter-spacing:5px;
+}
+
+.hero-text p{
+
+    font-size:24px;
+
+    color:#000;
+
+    margin-top:8px;
+}
+
+/* BOTÕES */
+
+.links{
+
+    padding:60px 30px;
+}
+
+.link-btn{
+
+    width:100%;
+
+    height:120px;
+
+    background:#d9d9d9;
+
+    border-radius:35px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:30px;
+
+    margin-bottom:35px;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+    cursor:pointer;
+}
+
+.link-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 0 25px rgba(255,255,255,.25),
+    0 15px 35px rgba(0,0,0,.15);
+}
+
+.link-btn img{
+
+    width:60px;
+
+    height:60px;
+
+    object-fit:contain;
+}
+
+.link-btn span{
+
+    font-size:28px;
+
+    font-weight:800;
+
+    letter-spacing:6px;
+
+    color:#000;
+}
+
+/* RODAPÉ */
+
+footer{
+
+    text-align:center;
+
+    color:white;
+
+    padding:50px 20px;
+
+    font-size:16px;
+
+    letter-spacing:2px;
+}
+
+/* MODAL 18+ */
+
+.modal{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.75);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+}
+
+.modal-box{
+
+    width:90%;
+    max-width:420px;
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:30px;
+
+    text-align:center;
+}
+
+.modal-box h2{
+
+    margin-bottom:15px;
+
+    color:#000;
+}
+
+.modal-box p{
+
+    color:#555;
+
+    margin-bottom:25px;
+
+    line-height:1.5;
+}
+
+.modal-buttons{
+
+    display:flex;
+
+    gap:10px;
+}
+
+.modal-buttons button{
+
+    flex:1;
+
+    border:none;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-weight:700;
+}
+
+.confirm{
+
+    background:#ef673f;
+
+    color:white;
+}
+
+.cancel{
+
+    background:#ddd;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .hero-text h1{
+
+        font-size:34px;
+    }
+
+    .hero-text p{
+
+        font-size:18px;
+    }
+
+    .link-btn{
+
+        height:90px;
+    }
+
+    .link-btn img{
+
+        width:45px;
+        height:45px;
+    }
+
+    .link-btn span{
+
+        font-size:18px;
+
+        letter-spacing:3px;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <img src="exclusive/hero.jpg">
+
+        <div class="hero-text">
+
+            <h1>YONNÁ GALVÃO</h1>
+
+            <p>Exclusive Content</p>
+
+        </div>
+
+    </section>
+
+    <!-- LINKS -->
+
+    <section class="links">
+
+        <a class="link-btn"
+           onclick="openAgeGate('https://privacy.com.br/profile/Yonnagalvao')">
+
+            <img src="exclusive/privacy-icon.png">
+
+            <span>PRIVACY</span>
+
+        </a>
+
+        <a class="link-btn"
+           onclick="openAgeGate('https://onlyfans.com/yonnagalvao/c50')">
+
+            <img src="exclusive/of-icon.png">
+
+            <span>OF FREE</span>
+
+        </a>
+
+        <a class="link-btn"
+           onclick="openAgeGate('https://onlyfans.com/bkangel/c3')">
+
+            <img src="exclusive/of-icon.png">
+
+            <span>OF VIP</span>
+
+        </a>
+
+    </section>
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        Yonná Galvão © 2026 - Todos os direitos reservados
+
+    </footer>
+
+</div>
+
+<!-- MODAL -->
+
+<div class="modal" id="ageModal">
+
+    <div class="modal-box">
+
+        <h2>18+ Content Warning</h2>
+
+        <p>
+
+            This page contains content intended only for adults.
+            By continuing you confirm that you are at least 18 years old.
+
+        </p>
+
+        <div class="modal-buttons">
+
+            <button class="cancel"
+                    onclick="closeModal()">
+
+                Cancel
+
+            </button>
+
+            <button class="confirm"
+                    onclick="continueAccess()">
+
+                I Am 18+
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+let targetLink = "";
+
+function openAgeGate(link){
+
+    targetLink = link;
+
+    document.getElementById("ageModal").style.display = "flex";
+}
+
+function closeModal(){
+
+    document.getElementById("ageModal").style.display = "none";
+}
+
+function continueAccess(){
+
+    window.location.href = targetLink;
+}
+
+</script>
+
+</body>
+</html>
